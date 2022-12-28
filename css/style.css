@@ -156,6 +156,7 @@ body {
     display: flex;
     gap: var(--gap);
     justify-content: center;
+    margin-bottom: 72px;
 }
 
    
@@ -175,10 +176,10 @@ body {
   
 }
 .prfo-services-list {
-    margin-top: 72px;
     display: flex; 
     flex-wrap: wrap;
-    gap:var(--gap);
+    margin-top: -48px;
+    margin-left: calc(-1 * var(--gap)); 
 }
 /* .prfo-services-list > .prfo-services-item {
     flex-basis: calc(100% / 3 - 24px);
@@ -188,6 +189,8 @@ img {
     max-width: 100%;
 }
 .prfo-services-item {
+    margin-top: 48px;
+    margin-left: var(--gap);
 }
 .prfo-services-container {
     padding: 32px 16px;
@@ -197,7 +200,6 @@ img {
 .prfo-services-title {
     color: var(--title-color);
     margin-bottom: 8px;
-   
 }
 .prfo-services-text {
     color: var(--first-text-color);
