@@ -57,6 +57,9 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+.header-border{
+    border-bottom: 1px solid #E7E9FC;
+}
 .header-navigation {
     display: flex;
     margin-right: auto;
@@ -131,11 +134,11 @@ body {
     margin-bottom: 48px;
 }
 .hero-btn {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     display: block;
     margin: 0 auto; 
-   
+    border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -157,7 +160,11 @@ body {
 
    
 .prfo-categories-btn {
-    height: 48px;
+    flex-direction: row;
+    padding: 12px 24px;
+    border-radius: 4px;
+    align-items: center;
+    flex: none;
 }
 .prfo-categories-btn:hover,
 .prfo-categories-btn:focus {
@@ -173,11 +180,19 @@ body {
     flex-wrap: wrap;
     gap:var(--gap);
 }
+/* .prfo-services-list > .prfo-services-item {
+    flex-basis: calc(100% / 3 - 24px);
+} */
+img {
+    display: block;
+    max-width: 100%;
+}
 .prfo-services-item {
 }
 .prfo-services-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;  
 }
 .prfo-services-title {
     color: var(--title-color);
@@ -215,6 +230,7 @@ body {
 /* -----------------SPECIFICS---------------- */
 .specifics {
     padding-top: var(--top);
+    padding-bottom: var(--botton);
 }
 .specifics-title {
     font-size: 36px;
